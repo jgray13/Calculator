@@ -2,24 +2,33 @@
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
-	flex-basis: 30%;
-	margin: 50px 35%;
+	flex-basis: 40%;
+	margin: 50px 30%;
 	padding: 50px 0;
 	font-size: 30px;
 	font-weight: bold;
 	font-family: Arial;
+	color: #000;
 	border: 3px solid #000;
 	border-radius: 10px;
 }
 #calc-display {
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: flex-end;
+	justify-content: space-around;
 	width: 50%;
 	margin: 0 20% 30px;
 	padding: 5px 5%;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: Arial;
+	color: #000;
+	letter-spacing: 5px;
 	border: 2px solid #000;
 	border-radius: 10px;
+}
+input {
+	text-align: right;
 }
 #calc-num-container {
 	display: flex;
@@ -31,11 +40,39 @@
 	justify-content: center;
 	align-items: center;
 	flex-basis: 16%;
-	margin: 10px 2%;
+	margin: 10px 3%;
 	padding: 5px 0;
 	font-size: 30px;
 	font-weight: bold;
 	font-family: Arial;
+	color: #000;
 	border: 2px solid #000;
 	border-radius: 10px;
+	outline: none;
+}
+
+/* media queries */
+@media only screen and (min-width: 1300px){
+	#calculator-container {
+	flex-basis: 30%;
+	margin: 50px 35%;
+}	
+}
+@media only screen and (min-width: 1600px){
+	#calculator-container {
+	flex-basis: 24%;
+	margin: 50px 38%;
+}	
+}
+@media only screen and (min-width: 2000px){
+	#calculator-container {
+	flex-basis: 20%;
+	margin: 50px 40%;
+}	
+}
+@media only screen and (min-width: 3000px){
+	#calculator-container {
+	flex-basis: 16%;
+	margin: 50px 42%;
+}	
 }
