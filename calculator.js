@@ -1,3 +1,5 @@
+var display = document.getElementById("calc-display");
+display.value = "0";
 var b7 = document.getElementById("seven");
 b7.onclick = function() {
 	document.getElementById("calc-display").value += "7";
@@ -52,12 +54,12 @@ bZero.onclick = function() {
 };
 var bClear = document.getElementById("clear");
 bClear.onclick = function() {
-	document.getElementById("calc-display").value = "";
+	document.getElementById("calc-display").value = "0";
 };
 /*
 var bEquals = document.getElementById("equals");
 bEquals.onclick = function() {
-	document.getElementById("calc-display").value += "=";
+	document.getElementById("calc-display").value = eval(bEquals.value);
 };
 */
 var bAdd = document.getElementById("add");
