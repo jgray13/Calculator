@@ -138,14 +138,14 @@ bEquals.onclick = function() {
 	var displayVal = display.value;
 	console.log(displayVal);
 	for (var i = 0; i < displayArr.length; i++) {
-		if (i.className = "num") {
+		if (displayArr[i].className = "num") {
 			var num1 = [];
-			num1.push(displayArr[i]);
+			num1.push(parseInt(displayArr[i]));
 			console.log(num1);
-		} else if (i.className = "operator") {
+		} else if (displayArr[i].className = "operator") {
 			var op = [];
 			op.push(displayArr[i]);
-			console.log(i);
+			console.log(op);
 		}
 	/*	if (i.nextSibling.className === "operator") {
 			var opIndex = displayArr.indexOf(i);
