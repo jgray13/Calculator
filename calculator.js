@@ -140,11 +140,11 @@ bEquals.onclick = function() {
 	for (var i = 0; i < displayArr.length; i++) {
 		if (i.className = "num") {
 			var num1 = [];
-			num1.push(i);
+			num1.push(displayArr[i]);
 			console.log(num1);
 		} else if (i.className = "operator") {
 			var op = [];
-			op.push(i);
+			op.push(displayArr[i]);
 			console.log(i);
 		}
 	/*	if (i.nextSibling.className === "operator") {
