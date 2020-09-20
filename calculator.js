@@ -107,11 +107,16 @@ var bEquals = document.getElementById("equals");
 bEquals.onclick = function() {
 	console.log(displayArr);
 	for (var i = 0; i < displayArr.length; i++) {
-		if (i.nextSibling.className === "operator") {
+		if (i.className === "num") {
+			var num1 = [];
+			num1.push(i);
+			console.log(num1);
+		}
+	/*	if (i.nextSibling.className === "operator") {
 			var opIndex = displayArr.indexOf(i);
 			var first = displayArr.slice(0, i + 1)
 			var second = displayArr.slice(i + 1, displayArr.length);
 			var sum = 
-		}
+		}*/
 	}
 };
