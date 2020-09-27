@@ -1,5 +1,8 @@
 var display = document.getElementById("calc-display");
 //display.value = "0";
+var firstNum;
+var secondNum;
+var operator;
 
 var displayVal = display.value;
 console.log(displayVal);
@@ -38,6 +41,14 @@ bDivide.onclick = function() {
 	console.log(displayArr);
 	var displayVal = display.value;
 	console.log(displayVal);
+	
+	var p = displayArr.pop();
+	console.log(p);
+	console.log(displayArr);
+	firstNum = displayArr.join("");
+	console.log(firstNum);
+	firstNum = parseInt(firstNum);
+	console.log(firstNum);
 };
 var b4 = document.getElementById("four");
 b4.onclick = function() {
@@ -70,6 +81,14 @@ bMult.onclick = function() {
 	console.log(displayArr);
 	var displayVal = display.value;
 	console.log(displayVal);
+	
+	var p = displayArr.pop();
+	console.log(p);
+	console.log(displayArr);
+	firstNum = displayArr.join("");
+	console.log(firstNum);
+	firstNum = parseInt(firstNum);
+	console.log(firstNum);
 };
 var b1 = document.getElementById("one");
 b1.onclick = function() {
@@ -102,6 +121,14 @@ bMinus.onclick = function() {
 	console.log(displayArr);
 	var displayVal = display.value;
 	console.log(displayVal);
+
+	var p = displayArr.pop();
+	console.log(p);
+	console.log(displayArr);
+	firstNum = displayArr.join("");
+	console.log(firstNum);
+	firstNum = parseInt(firstNum);
+	console.log(firstNum);
 };
 var bZero = document.getElementById("zero");
 bZero.onclick = function() {
@@ -124,34 +151,40 @@ bAdd.onclick = function() {
 	console.log(displayArr);
 	var displayVal = display.value;
 	console.log(displayVal);
+	
+	var p = displayArr.pop();
+	console.log(p);
+	console.log(displayArr);
+	firstNum = displayArr.join("");
+	console.log(firstNum);
+	firstNum = parseInt(firstNum);
+	console.log(firstNum);
 };
-/*
-var bEquals = document.getElementById("equals");
-bEquals.onclick = function() {
-	document.getElementById("calc-display").value = eval(bEquals.value);
-};
-*/
-//var op = getElementsByClassName("operator");
+
 var bEquals = document.getElementById("equals");
 bEquals.onclick = function() {
 	console.log(displayArr);
 	var displayVal = display.value;
 	console.log(displayVal);
-	for (var i = 0; i < displayArr.length; i++) {
+	
+
+
+	
+/*	for (var i = 0; i < displayArr.length; i++) {
 		if (displayArr[i].className = "num") {
 			var num1 = [];
 			num1.push(parseInt(displayArr[i]));
 			console.log(num1);
-		} else if (displayArr[i].className = "operator") {
+		} if (displayArr[i] === NaN) {
 			var op = [];
 			op.push(displayArr[i]);
 			console.log(op);
 		}
-	/*	if (i.nextSibling.className === "operator") {
+		if (i.nextSibling.className === "operator") {
 			var opIndex = displayArr.indexOf(i);
 			var first = displayArr.slice(0, i + 1)
 			var second = displayArr.slice(i + 1, displayArr.length);
 			var sum = 
-		}*/
-	}
+		}
+	}*/
 };
