@@ -42,8 +42,8 @@ bDivide.onclick = function() {
 	var displayVal = display.value;
 	console.log(displayVal);
 	
-	var p = displayArr.pop();
-	console.log(p);
+	operator = displayArr.pop();
+	console.log(operator);
 	console.log(displayArr);
 	firstNum = displayArr.join("");
 	console.log(firstNum);
@@ -82,8 +82,8 @@ bMult.onclick = function() {
 	var displayVal = display.value;
 	console.log(displayVal);
 	
-	var p = displayArr.pop();
-	console.log(p);
+	operator = displayArr.pop();
+	console.log(operator);
 	console.log(displayArr);
 	firstNum = displayArr.join("");
 	console.log(firstNum);
@@ -122,8 +122,8 @@ bMinus.onclick = function() {
 	var displayVal = display.value;
 	console.log(displayVal);
 
-	var p = displayArr.pop();
-	console.log(p);
+	operator = displayArr.pop();
+	console.log(operator);
 	console.log(displayArr);
 	firstNum = displayArr.join("");
 	console.log(firstNum);
@@ -152,8 +152,8 @@ bAdd.onclick = function() {
 	var displayVal = display.value;
 	console.log(displayVal);
 	
-	var p = displayArr.pop();
-	console.log(p);
+	operator = displayArr.pop();
+	console.log(operator);
 	console.log(displayArr);
 	firstNum = displayArr.join("");
 	console.log(firstNum);
@@ -163,9 +163,16 @@ bAdd.onclick = function() {
 
 var bEquals = document.getElementById("equals");
 bEquals.onclick = function() {
-	console.log(displayArr);
+	console.log(firstNum);
+//	var displayVal = display.value;
+	console.log(operator);
 	var displayVal = display.value;
 	console.log(displayVal);
+	
+	var add = "+";
+	var subtract = "-";
+	var multiply = "X";
+	var divide = "%";
 	
 
 
