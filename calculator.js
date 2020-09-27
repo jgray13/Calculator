@@ -168,13 +168,19 @@ bEquals.onclick = function() {
 	console.log(operator);
 	var displayVal = display.value;
 	console.log(displayVal);
+	console.log(displayArr);
 	
 	var add = "+";
 	var subtract = "-";
 	var multiply = "X";
 	var divide = "%";
 	
-
+/*	for (var i = 0; i < displayArr.length; i++) {
+		if (displayArr[i] === "+" || "-" || "X" || "%") {
+			return displayArr[i];
+		}
+	}
+	*/
 
 	
 /*	for (var i = 0; i < displayArr.length; i++) {
