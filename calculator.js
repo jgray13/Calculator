@@ -3,6 +3,7 @@ var display = document.getElementById("calc-display");
 var firstNum;
 var secondNum;
 var operator;
+var answer;
 
 var displayVal = display.value;
 console.log(displayVal);
@@ -15,7 +16,7 @@ b7.onclick = function() {
 	display.value += "7";
 	displayArr.push("7");
 	console.log(displayArr);
-	var displayVal = display.value;
+	displayVal = display.value;
 	console.log(displayVal);
 };
 var b8 = document.getElementById("eight");
@@ -23,7 +24,7 @@ b8.onclick = function() {
 	display.value += "8";
 	displayArr.push("8");
 	console.log(displayArr);
-	var displayVal = display.value;
+	displayVal = display.value;
 	console.log(displayVal);
 };
 var b9 = document.getElementById("nine");
@@ -31,7 +32,7 @@ b9.onclick = function() {
 	display.value += "9";
 	displayArr.push("9");
 	console.log(displayArr);
-	var displayVal = display.value;
+	displayVal = display.value;
 	console.log(displayVal);
 };
 var bDivide = document.getElementById("divide");
@@ -39,7 +40,7 @@ bDivide.onclick = function() {
 	display.value += "%";
 	displayArr.push("%");
 	console.log(displayArr);
-	var displayVal = display.value;
+	displayVal = display.value;
 	console.log(displayVal);
 	
 	operator = displayArr.pop();
@@ -49,13 +50,14 @@ bDivide.onclick = function() {
 	console.log(firstNum);
 	firstNum = parseInt(firstNum);
 	console.log(firstNum);
+	displayArr = [];
 };
 var b4 = document.getElementById("four");
 b4.onclick = function() {
 	display.value += "4";
 	displayArr.push("4");
 	console.log(displayArr);
-	var displayVal = display.value;
+	displayVal = display.value;
 	console.log(displayVal);
 };
 var b5 = document.getElementById("five");
@@ -71,7 +73,7 @@ b6.onclick = function() {
 	display.value += "6";
 	displayArr.push("6");
 	console.log(displayArr);
-	var displayVal = display.value;
+	displayVal = display.value;
 	console.log(displayVal);
 };
 var bMult = document.getElementById("mult");
@@ -79,7 +81,7 @@ bMult.onclick = function() {
 	display.value += "X";
 	displayArr.push("X");
 	console.log(displayArr);
-	var displayVal = display.value;
+	displayVal = display.value;
 	console.log(displayVal);
 	
 	operator = displayArr.pop();
@@ -89,13 +91,14 @@ bMult.onclick = function() {
 	console.log(firstNum);
 	firstNum = parseInt(firstNum);
 	console.log(firstNum);
+	displayArr = [];
 };
 var b1 = document.getElementById("one");
 b1.onclick = function() {
 	display.value += "1";
 	displayArr.push("1");
 	console.log(displayArr);
-	var displayVal = display.value;
+	displayVal = display.value;
 	console.log(displayVal);
 };
 var b2 = document.getElementById("two");
@@ -103,7 +106,7 @@ b2.onclick = function() {
 	display.value += "2";
 	displayArr.push("2");
 	console.log(displayArr);
-	var displayVal = display.value;
+	displayVal = display.value;
 	console.log(displayVal);
 };
 var b3 = document.getElementById("three");
@@ -111,7 +114,7 @@ b3.onclick = function() {
 	display.value += "3";
 	displayArr.push("3");
 	console.log(displayArr);
-	var displayVal = display.value;
+	displayVal = display.value;
 	console.log(displayVal);
 };
 var bMinus = document.getElementById("minus");
@@ -129,13 +132,14 @@ bMinus.onclick = function() {
 	console.log(firstNum);
 	firstNum = parseInt(firstNum);
 	console.log(firstNum);
+	displayArr = [];
 };
 var bZero = document.getElementById("zero");
 bZero.onclick = function() {
 	display.value += "0";
 	displayArr.push("0");
 	console.log(displayArr);
-	var displayVal = display.value;
+	displayVal = display.value;
 	console.log(displayVal);
 };
 var bClear = document.getElementById("clear");
@@ -149,7 +153,7 @@ bAdd.onclick = function() {
 	display.value += "+";
 	displayArr.push("+");
 	console.log(displayArr);
-	var displayVal = display.value;
+	displayVal = display.value;
 	console.log(displayVal);
 	
 	operator = displayArr.pop();
@@ -159,23 +163,48 @@ bAdd.onclick = function() {
 	console.log(firstNum);
 	firstNum = parseInt(firstNum);
 	console.log(firstNum);
+	displayArr = [];
 };
 
 var bEquals = document.getElementById("equals");
 bEquals.onclick = function() {
 	console.log(firstNum);
-//	var displayVal = display.value;
 	console.log(operator);
-	var displayVal = display.value;
+	displayVal = display.value;
 	console.log(displayVal);
 	console.log(displayArr);
+	secondNum = displayArr.join("");
+	secondNum = parseInt(secondNum);
+	console.log(secondNum);
+	displayVal = "";
 	
+	if (operator.textContent = "%") {
+		answer = firstNum / secondNum;
+		console.log(answer);
+		displayVal = answer;
+	}
+	if (operator.textContent = "X") {
+		answer = firstNum * secondNum;
+		console.log(answer);
+		displayVal = answer;
+	}
+	if (operator.value = "-") {
+		answer = firstNum - secondNum;
+		console.log(answer);
+		displayVal = answer;
+	}
+	if (operator.value = "+") {
+		answer = firstNum + secondNum;
+		console.log(answer);
+		displayVal = answer;
+	}
+/*	
 	var add = "+";
 	var subtract = "-";
 	var multiply = "X";
 	var divide = "%";
 	
-/*	for (var i = 0; i < displayArr.length; i++) {
+	for (var i = 0; i < displayArr.length; i++) {
 		if (displayArr[i] === "+" || "-" || "X" || "%") {
 			return displayArr[i];
 		}
