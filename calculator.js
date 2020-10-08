@@ -176,35 +176,55 @@ bEquals.onclick = function() {
 	secondNum = displayArr.join("");
 	secondNum = parseInt(secondNum);
 	console.log(secondNum);
-	displayVal = "";
 	
-	if (operator.textContent = "%") {
+	switch(operator) {
+		case "%":
+		answer = firstNum / secondNum;
+		break;
+		case "X":
+		answer = firstNum * secondNum;
+		break;
+		case "-":
+		answer = firstNum - secondNum;
+		break;
+		case "+":
+		answer = firstNum + secondNum;
+		break;
+		default:
+		answer = "";
+	}
+	display.value = answer;
+	console.log(answer);
+	
+/*	if (operator.value = "%") {
 		answer = firstNum / secondNum;
 		console.log(answer);
-		displayVal = answer;
+		display.value = answer;
 	}
-	if (operator.textContent = "X") {
+	if (operator.value = "X") {
 		answer = firstNum * secondNum;
 		console.log(answer);
-		displayVal = answer;
+		display.value = answer;
 	}
 	if (operator.value = "-") {
 		answer = firstNum - secondNum;
 		console.log(answer);
-		displayVal = answer;
+		display.value = answer;
 	}
 	if (operator.value = "+") {
 		answer = firstNum + secondNum;
 		console.log(answer);
-		displayVal = answer;
+    	display.value = answer;
 	}
+	*/
+
 /*	
 	var add = "+";
 	var subtract = "-";
 	var multiply = "X";
 	var divide = "%";
 	
-	for (var i = 0; i < displayArr.length; i++) {
+for (var i = 0; i < displayArr.length; i++) {
 		if (displayArr[i] === "+" || "-" || "X" || "%") {
 			return displayArr[i];
 		}
