@@ -13,6 +13,7 @@ console.log(displayArr);
 
 var b7 = document.getElementById("seven");
 b7.onclick = function() {
+//	display.value = "";
 	display.value += "7";
 	displayArr.push("7");
 	console.log(displayArr);
@@ -21,6 +22,7 @@ b7.onclick = function() {
 };
 var b8 = document.getElementById("eight");
 b8.onclick = function() {
+//	display.value = "";
 	display.value += "8";
 	displayArr.push("8");
 	console.log(displayArr);
@@ -29,6 +31,7 @@ b8.onclick = function() {
 };
 var b9 = document.getElementById("nine");
 b9.onclick = function() {
+//	display.value = "";
 	display.value += "9";
 	displayArr.push("9");
 	console.log(displayArr);
@@ -37,6 +40,7 @@ b9.onclick = function() {
 };
 var bDivide = document.getElementById("divide");
 bDivide.onclick = function() {
+//	display.value = "";
 	display.value += "%";
 	displayArr.push("%");
 	console.log(displayArr);
@@ -54,6 +58,7 @@ bDivide.onclick = function() {
 };
 var b4 = document.getElementById("four");
 b4.onclick = function() {
+//	display.value = "";
 	display.value += "4";
 	displayArr.push("4");
 	console.log(displayArr);
@@ -62,6 +67,7 @@ b4.onclick = function() {
 };
 var b5 = document.getElementById("five");
 b5.onclick = function() {
+//	display.value = "";
 	display.value += "5";
 	displayArr.push("5");
 	console.log(displayArr);
@@ -70,6 +76,7 @@ b5.onclick = function() {
 };
 var b6 = document.getElementById("six");
 b6.onclick = function() {
+//	display.value = "";
 	display.value += "6";
 	displayArr.push("6");
 	console.log(displayArr);
@@ -78,6 +85,7 @@ b6.onclick = function() {
 };
 var bMult = document.getElementById("mult");
 bMult.onclick = function() {
+//	display.value = "";
 	display.value += "X";
 	displayArr.push("X");
 	console.log(displayArr);
@@ -95,6 +103,7 @@ bMult.onclick = function() {
 };
 var b1 = document.getElementById("one");
 b1.onclick = function() {
+//	display.value = "";
 	display.value += "1";
 	displayArr.push("1");
 	console.log(displayArr);
@@ -103,6 +112,7 @@ b1.onclick = function() {
 };
 var b2 = document.getElementById("two");
 b2.onclick = function() {
+//	display.value = "";
 	display.value += "2";
 	displayArr.push("2");
 	console.log(displayArr);
@@ -111,6 +121,7 @@ b2.onclick = function() {
 };
 var b3 = document.getElementById("three");
 b3.onclick = function() {
+//	display.value = "";
 	display.value += "3";
 	displayArr.push("3");
 	console.log(displayArr);
@@ -119,6 +130,7 @@ b3.onclick = function() {
 };
 var bMinus = document.getElementById("minus");
 bMinus.onclick = function() {
+//	display.value = "";
 	display.value += "-";
 	displayArr.push("-");
 	console.log(displayArr);
@@ -150,6 +162,7 @@ bClear.onclick = function() {
 };
 var bAdd = document.getElementById("add");
 bAdd.onclick = function() {
+//	display.value = "";
 	display.value += "+";
 	displayArr.push("+");
 	console.log(displayArr);
