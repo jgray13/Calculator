@@ -231,21 +231,14 @@ bEquals.onclick = function() {
 	}
 	*/
 
-/*	
-	var add = "+";
-	var subtract = "-";
-	var multiply = "X";
-	var divide = "%";
-	
+/*
 for (var i = 0; i < displayArr.length; i++) {
 		if (displayArr[i] === "+" || "-" || "X" || "%") {
 			return displayArr[i];
 		}
 	}
-	*/
-
 	
-/*	for (var i = 0; i < displayArr.length; i++) {
+	for (var i = 0; i < displayArr.length; i++) {
 		if (displayArr[i].className = "num") {
 			var num1 = [];
 			num1.push(parseInt(displayArr[i]));
