@@ -1,4 +1,2 @@
 # calculator
-A calculator made with HTML, CSS and JavaScript.
-
-In development.
+An online calculator made with HTML, CSS and JavaScript.
