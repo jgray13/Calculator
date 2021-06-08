@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calculator</title>
+<link href="calculator.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="setDisplay()">
+<div id="centerDoc">
+<main>
+<div id="calculator-container">
+<h1>Calculator</h1>
+<div id="calculator-container-inner">
+<input type="text" name="calc-display" id="calc-display" disabled>
+
+<div id="calc-num-container">
+<button name="seven" id="seven" class="calc-num num">7</button>
+<button name="eight" id="eight" class="calc-num num">8</button>
+<button name="nine" id="nine" class="calc-num num">9</button>
+<button name="divide" id="divide" class="calc-num operator">&#247;</button>
+<button name="four" id="four" class="calc-num num">4</button>
+<button name="five" id="five" class="calc-num num">5</button>
+<button name="six" id="six" class="calc-num num">6</button>
+<button name="mult" id="mult" class="calc-num operator">&#215;</button>
+<button name="one" id="one" class="calc-num num">1</button>
+<button name="two" id="two" class="calc-num num">2</button>
+<button name="three" id="three" class="calc-num num">3</button>
+<button name="minus" id="minus" class="calc-num operator">-</button>
+<button name="zero" id="zero" class="calc-num num">0</button>
+<button name="point" id="point" class="calc-num">.</button>
+<button name="equals" id="equals" class="calc-num">&#61;</button>
+<button name="add" id="add" class="calc-num operator">+</button>
+<button name="clear" id="clear" class="calc-num">C</button>
+</div>
+
+</div> <!-- end calculator-container-inner -->
+</div> <!-- end calculator-container -->
+
+</main>
+</div> <!-- end centerDoc -->
+<script src="calculator.js"></script>
+</body>
+</html>

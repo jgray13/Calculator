@@ -1,15 +1,50 @@
+html {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+body {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    font-size: 15px;
+	font-family: Helvetica, sans-serif;
+    color: #292929;
+    line-height: 150%;
+    margin: 0 auto;
+}
+#centerDoc {
+    position: relative;
+    min-height: 100%;
+    z-index: 10;
+    width: 80%;
+    margin: 0 auto;
+}
+main {
+    position: relative;
+    min-height: 100%;
+    margin: 0 auto;
+}
 h1 {
 	font-size: 50px;
 	margin: 20px auto;
 	text-align: center;
 }
+
 #calculator-container {
+	width: 70%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #fff;
+    overflow: auto;
+}
+#calculator-container-inner {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
-	flex-basis: 40%;
-	margin: 0 30%;
-	padding: 30px 0;
+	flex-basis: 80%;
+	margin: 50px 10%;
+	padding: 50px 0;
 	font-size: 30px;
 	font-weight: bold;
 	font-family: Arial;
@@ -20,7 +55,7 @@ h1 {
 #calc-display {
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: space-around;
+	justify-content: flex-end;
 	width: 50%;
 	margin: 0 20% 30px;
 	padding: 5px 5%;
@@ -31,6 +66,9 @@ h1 {
 	letter-spacing: 5px;
 	border: 2px solid #000;
 	border-radius: 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 input {
 	text-align: right;
@@ -54,30 +92,22 @@ input {
 	border: 2px solid #000;
 	border-radius: 10px;
 	outline: none;
+	height: auto;
+}
+#clear {
+	margin-right: auto;
 }
 
 /* media queries */
-@media only screen and (min-width: 1300px){
-	#calculator-container {
-	flex-basis: 30%;
-	margin: 0 35%;
-}	
+@media only screen and (min-width: 600px){
+#calculator-container-inner {
+	flex-basis: 70%;
+	margin: 50px 15%;
 }
-@media only screen and (min-width: 1600px){
-	#calculator-container {
-	flex-basis: 24%;
-	margin: 0 38%;
-}	
 }
-@media only screen and (min-width: 2000px){
-	#calculator-container {
-	flex-basis: 20%;
-	margin: 0 40%;
-}	
+@media only screen and (min-width: 1200px){
+#calculator-container-inner {
+	flex-basis: 60%;
+	margin: 50px 20%;
 }
-@media only screen and (min-width: 3000px){
-	#calculator-container {
-	flex-basis: 16%;
-	margin: 0 42%;
-}	
 }
