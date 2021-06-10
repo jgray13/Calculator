@@ -33,7 +33,7 @@ h1 {
 
 #calculator-container {
 	display: flex;
-	height: 100vh;
+	height: 90vh;
 	align-items: center;
 	width: 70%;
     margin: 0 auto;
