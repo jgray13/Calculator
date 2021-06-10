@@ -1,4 +1,4 @@
-# calculator
+# Calculator
 An online calculator made with HTML, CSS and JavaScript.
 
 The aim was to develop a calculator app using my own technique. The process I used is described below:
