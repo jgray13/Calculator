@@ -9,7 +9,8 @@ The aim was to develop a calculator app using my own technique. The process I us
 
 &bull; Calculate the answer of sums using a switch statment
 
-&bull; Seperate functions to deal with addition, subtraction, multiplication and division: if the user has entered a number, an operator, another number, then another operator - display the answer to the first sum with the second operator ready for another sum, if the operator is undefined - add the operator input to the display and assign to the operator variable, if the answer is undefined - assign the first number variable as the number input (the input before the operator), if the answer is assigned (if a number, operator, second number have been input) reset the first number variable as the answer (which has been calculated) ready for a following sum
+&bull; Seperate functions to deal with addition, subtraction, multiplication and division: if the operator is undefined - add the operator input to the display and assign to the operator variable, if the answer is undefined - assign the first number variable as the number input (the input before the operator), if the answer is assigned (if a number, operator, second number have been input and the answer has been calculated) assign the answer to the first number variable to ready for a following sum, 
+if the user has entered a number, an operator, another number, then another operator - display the answer to the first sum with the second operator ready for another sum
 
 &bull; The clear button: set display to zero, reset variables to undefined
 
