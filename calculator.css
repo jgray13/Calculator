@@ -35,10 +35,12 @@ h1 {
 	display: flex;
 	align-items: center;
 	width: 100%;
+	height: 100vh;
     margin: 0 auto;
     padding: 0;
     background-color: #fff;
     overflow: auto;
+	background-color: #f2f2f2;
 }
 #calculator-container-inner {
 	display: flex;
@@ -53,6 +55,7 @@ h1 {
 	color: #000;
 	border: 3px solid #000;
 	border-radius: 10px;
+	background-color: #fff;
 }
 #calc-display {
 	display: flex;
@@ -116,31 +119,31 @@ input {
 @media only screen and (min-width: 700px){
 #calculator-container-inner {
 	flex-basis: 41%;
-	margin: 70px 29% 0;
+	margin: 50px 29% 0;
 }
 }
 @media only screen and (min-width: 800px){
 #calculator-container-inner {
 	flex-basis: 39%;
-	margin: 70px 30% 0;
+	margin: 50px 30% 0;
 }
 }
 @media only screen and (min-width: 900px){
 #calculator-container-inner {
 	flex-basis: 31%;
-	margin: 70px 34% 0;
+	margin: 50px 34% 0;
 }
 }
 @media only screen and (min-width: 1100px){
 #calculator-container-inner {
 	flex-basis: 29%;
-	margin: 70px 35% 0;
+	margin: 50px 35% 0;
 }
 }
 @media only screen and (min-width: 1200px){
 #calculator-container-inner {
 	flex-basis: 34%;
-	margin: 80px 33% 0;
+	margin: 50px 33% 0;
 	padding: 50px 0;
 	font-size: 28px;
 }
@@ -157,42 +160,42 @@ input {
 @media only screen and (min-width: 1300px){
 #calculator-container-inner {
 	flex-basis: 30%;
-	margin: 80px 35% 0;
+	margin: 50px 35% 0;
 }
 }
 @media only screen and (min-width: 1500px){
 #calculator-container-inner {
 	flex-basis: 26%;
-	margin: 80px 37% 0;
+	margin: 50px 37% 0;
 }
 }
 @media only screen and (min-width: 1700px){
 #calculator-container-inner {
 	flex-basis: 24%;
-	margin: 80px 38% 0;
+	margin: 50px 38% 0;
 }
 }
 @media only screen and (min-width: 1900px){
 #calculator-container-inner {
 	flex-basis: 22%;
-	margin: 80px 39% 0;
+	margin: 50px 39% 0;
 }
 }
 @media only screen and (min-width: 2100px){
 #calculator-container-inner {
 	flex-basis: 20%;
-	margin: 80px 40% 0;
+	margin: 50px 40% 0;
 }
 }
 @media only screen and (min-width: 2400px){
 #calculator-container-inner {
 	flex-basis: 18%;
-	margin: 80px 41% 0;
+	margin: 50px 41% 0;
 }
 }
 @media only screen and (min-width: 2700px){
 #calculator-container-inner {
 	flex-basis: 16%;
-	margin: 80px 42% 0;
+	margin: 50px 42% 0;
 }
 }
