@@ -25,7 +25,7 @@ main {
     position: relative;
     min-height: 100%;
     margin: 0 auto;
-	background-colur: cornflowerblue;
+	background-colour: cornflowerblue;
 }
 h1 {
 	font-size: 50px;
@@ -201,3 +201,4 @@ input {
 }
 
 }
+
